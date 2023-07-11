@@ -25,7 +25,7 @@ admin.add_view(ManoModelView(Irasas, db.session))
 admin.add_view(ManoModelView(Vartotojas, db.session))
 
 
-@app.route("/admin")
-@login_required
-def admin():
-    return redirect(url_for(admin))
+# @app.route("/admin")
+# @login_required
+# def admin():
+#     return redirect(url_for(admin))
