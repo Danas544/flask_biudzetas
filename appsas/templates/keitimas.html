@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block content %}
+    <div class="content-section">
+        <form method="POST" action="">
+            {{ form.hidden_tag() }}
+            <fieldset class="form-group">
+                <legend class="border-bottom mb-4">Pasikeiskite slaptažodi</legend>
+                <div class="form-group">
+                    {{ form.old_slaptazodis.label(class="form-control-label") }}
+                    {{ form.old_slaptazodis(class="form-control form-control-lg") }}
+                </div>
+                <div class="form-group">
+                    {{ form.new_slaptazodis.label(class="form-control-label") }}
+                    {{ form.new_slaptazodis(class="form-control form-control-lg") }}
+                </div>
+                <div class="form-group">
+                    {{ form.new_patvirtintas_slaptazodis.label(class="form-control-label") }}
+                    {{ form.new_patvirtintas_slaptazodis(class="form-control form-control-lg") }}
+                </div>
+
+
+            </fieldset>
+            <div class="form-group">
+                {{ form.submit(class="btn btn-outline-info") }}
+            </div>
+        </form>
+    </div>
+
+{% endblock content %}
